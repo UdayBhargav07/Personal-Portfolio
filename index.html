@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9036746683.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Uday Logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class = "header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Uday Bhargav</span><br>From Hyderabad</h1>
+        </div>
+    </div>
+</div>
+<!---------------about------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/User_1_.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I’m pursuing B.Tech in Computer Science and Engineering with a focus on IoT at Malla Reddy College of Engineering and Technology. 
+                    My passion for UI/UX design has led me to develop projects that demonstrate my ability to create intuitive and effective user experiences. 
+                    Alongside this, I’ve worked on innovative IoT projects that showcase my technical skills. 
+                    I’m driven by a deep interest in both design and technology, continuously learning to create experiences that truly resonate with users.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Wireframing, Prototyping, Design Research, Responsive Design, Interaction Design</li>
+                        <li><span>IoT</span><br>Developing IoT Enabled Applications</li>
+                        <li><span>Web Development</span><br>HTML, CSS, JavaScript</li>
+                        <li><span>Programming Languages</span><br>Python, Java, C</li>
+                        <li><span>Tools</span><br>Figma, Canva, GitHub, OpenCV</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2025</span><br>B.Tech, Malla Reddy College of Engineering and Technology</li>
+                        <li><span>2019-2021</span><br>Intermediate, Narayana Junior College</li>
+                        <li><span>2007-2019</span><br>SSC, Sharada High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------services---------- ----->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>I specialize in creating user-friendly and visually appealing designs that enhance user experience through research, 
+                    wireframing, and prototyping, ensuring intuitive and effective interfaces.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I develop responsive and performance-optimized websites using the latest technologies, 
+                    ensuring seamless functionality and a great user experience across all devices.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-network-wired"></i>
+                <h2>IoT Engineering</h2>
+                <p>I design and develop IoT solutions that connect devices and automate processes, enhancing efficiency and enabling smarter environments. 
+                    My work includes integrating sensors, microcontrollers, and cloud services to build scalable and reliable IoT systems.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------portfolio----------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Work(1).png">
+                <div class="layer">
+                    <h3>Jio-Bp ElectroNav</h3>
+                    <p>ElectroNav is a user-centered app designed to help electric vehicle users easily locate nearby charging stations, 
+                        offering a seamless experience from search to navigation with an intuitive interface.</p>
+                        <a href="https://www.figma.com/proto/d0lHAB9zwsP0A92XlfJ1Po/Jio-Bp-ElectroNav-Hi-Fi-Prototypes?page-id=0%3A1&node-id=88-620&viewport=201%2C121%2C0.07&t=r6p2cPbABw5U9lp7-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=88%3A620"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Work(2).png">
+                <div class="layer">
+                    <h3>BowlBuddy</h3>
+                    <p>BowlBuddy is an IoT-enabled smart pet feeder designed to automate feeding schedules and allow remote control, 
+                        ensuring your pet is always well-fed and cared for, even when you're away.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Personal Portfolio</h3>
+                    <p>BowlBuddy is an IoT-enabled smart pet feeder designed to automate feeding schedules and allow remote control, 
+                        ensuring your pet is always well-fed and cared for, even when you're away.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i></i>udaybhargav2507@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 9705053793</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/udaybhargav2507/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/UdayBhargav07"><i class="fa-brands fa-github"></i></i></a>
+                </div>
+                <a href="images/Uday Bhargav Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©2024. Made with <i class="fa-solid fa-heart"></i> by Uday Bhargav </p>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-240px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzRzn3DZI-itcbAcUkt4gpUP5wjTyFEHLgYB8sOJL_1x0bqyEgPb2fl3lvtoWofnC2r/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            },2000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
